@@ -22,7 +22,8 @@ const routes: Array<RouteConfig> = [
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  // mode不能用history,打包后不显示
+  mode: "hash",
   base: process.env.BASE_URL,
   routes
 });
